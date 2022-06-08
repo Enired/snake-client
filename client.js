@@ -19,9 +19,22 @@ const connect = function () {
     console.log('-----\nYOU HAVE CONNECTED\n-----')
     conn.write('Name: DTB')
   })
-
+ 
+  //////////////////////
+  // Testing Movement //
+  //////////////////////
   // conn.on('connect', () => {
-    
+  //   setInterval(
+  //     ()=>{
+  //       conn.write('Move: left')
+  //     },
+  //     1000
+  //   )
+  //   setInterval(
+  //     ()=>{
+  //       conn.write('Move: up')
+  //     }, 1500
+  //   )
   // })
 
   return conn;
