@@ -18,6 +18,9 @@ const connect = function () {
   conn.on('connect', () => {
     console.log('-----\nYOU HAVE CONNECTED\n-----')
     conn.write('Name: DTB')
+    setInterval(()=>{
+      conn.write('Say: LHL!')
+    }, 5000)
   })
  
   //////////////////////
